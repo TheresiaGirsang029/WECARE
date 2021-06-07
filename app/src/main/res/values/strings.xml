@@ -41,4 +41,5 @@
     <string name="urgent">Urgensi 10-100%</string>
     <string name="story">Kronologi Kejadian</string>
     <string name="tgljadi">Tanggal Kejadian</string>
+    <string name="Logout">Logout</string>
 </resources>

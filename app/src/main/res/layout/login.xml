@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bggradient"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
@@ -67,6 +67,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/login_btn"
                 android:layout_width="200dp"
                 android:layout_height="49dp"
                 android:text="@string/login"
