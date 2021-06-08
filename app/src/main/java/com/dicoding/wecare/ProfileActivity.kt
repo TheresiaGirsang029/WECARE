@@ -1,15 +1,20 @@
 package com.dicoding.wecare
 
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.dicoding.wecare.models.*
 import com.dicoding.wecare.storage.SharedPrefManager
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.konsultasi.*
 import kotlinx.android.synthetic.main.menu.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import android.widget.ImageButton
 
 class ProfileActivity : AppCompatActivity()  {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +40,7 @@ class ProfileActivity : AppCompatActivity()  {
                 }
 
                 override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
-                    val error = response.body()?.error
+
                     val counts = response.body()?.count
                     if(response.body()?.error == false){
                         txtCount.setText(counts)
@@ -53,7 +58,7 @@ class ProfileActivity : AppCompatActivity()  {
                 }
 
                 override fun onResponse(call: Call<PengaduanOk>, response: Response<PengaduanOk>) {
-                    val error = response.body()?.error
+
                     val count2 = response.body()?.countOk
                     if(response.body()?.error == false){
                         txtCount2.setText(count2)
@@ -71,7 +76,7 @@ class ProfileActivity : AppCompatActivity()  {
                 }
 
                 override fun onResponse(call: Call<PengaduanNotOk>, response: Response<PengaduanNotOk>) {
-                    val error = response.body()?.error
+
                     val count3 = response.body()?.countNotOk
                     if(response.body()?.error == false){
                         txtCount3.setText(count3)
@@ -81,6 +86,23 @@ class ProfileActivity : AppCompatActivity()  {
 
                 }
             })
+
+
+//        button Konsultasi
+        menu2.setOnClickListener {
+            setContentView(R.layout.konsultasi)
+        }
+
+//        button chatbot
+        menu3.setOnClickListener({
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("http://34.101.228.44/we-care/User_Page/Users_page_c#hubungi"))
+            startActivity(i)
+        })
+
+//        Button Police Call
+        menu5.setOnClickListener {
+            setContentView(R.layout.policecall)
+        }
 
 
     }
