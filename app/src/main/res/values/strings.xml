@@ -41,4 +41,6 @@
     <string name="urgent">Urgensi 10-100%</string>
     <string name="story">Kronologi Kejadian</string>
     <string name="tgljadi">Tanggal Kejadian</string>
+    <string name="note1">Anda menekan PANIC BUTTON</string>
+    <string name="note2">Anda akan terhubung dengan tim KPPA</string>
 </resources>

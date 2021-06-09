@@ -8,7 +8,32 @@
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="#DCD6D6"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Nomor Polisi"
+            android:textColor="#009588"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
         android:layout_height="60dp"
         app:cardBackgroundColor="#DCD6D6"
         app:cardCornerRadius="15dp"
@@ -18,18 +43,22 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07">
+        app:layout_constraintVertical_bias="0.229">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_police"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="310dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nomor Polisi"
-            android:textSize="30sp"
-            android:textColor="#009588"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="60dp"/>
-
+            android:text="Search"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
