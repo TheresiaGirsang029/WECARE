@@ -275,7 +275,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="210dp"
             android:layout_marginTop="70dp"
-            android:text="@string/Logout"
+            android:text="@string/logout"
             android:textColor="@color/black" />
 
 
