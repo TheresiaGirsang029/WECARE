@@ -23,7 +23,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nama1"
+        android:text="@string/nama"
         android:textColor="#009588"
         android:textSize="20sp"
         android:textStyle="bold"
